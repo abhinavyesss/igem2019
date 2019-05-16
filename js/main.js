@@ -24,7 +24,6 @@
 		initTimeline(this);
 		initEvents(this);
   };
-
   function initTimeline(timeline) {
   	// set dates left position
   	var left = 0;
