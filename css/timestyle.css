@@ -50,7 +50,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-img, video, svg {
+img, video {
   max-width: 100%;
 }
 :root, [data-theme="default"] {
@@ -1813,7 +1813,6 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: #dfdfdf;
-  border-color: grey;
   transition: border-color 0.3s;
 }
 .js .cd-h-timeline__navigation::after {
@@ -1928,20 +1927,18 @@ body {
   overflow-y: hidden;
   transition: 0.5s;
 }
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
-.overlay a:hover, .overlay a:focus {
+.overlay .closebtn:hover, .overlay .closebtn:focus {
   color: #f1f1f1;
 }
 
 .overlay .closebtn {
+  color: grey;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
   position: absolute;
   top: 20px;
   right: 45px;

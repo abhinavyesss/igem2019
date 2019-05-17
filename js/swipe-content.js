@@ -63,11 +63,9 @@
 
 	function endDrag(content, event) {
 		cancelDragging(content);
-		// credits: https://css-tricks.com/simple-swipe-with-vanilla-javascript/
 		var dx = parseInt(unify(event).clientX), 
 	    dy = parseInt(unify(event).clientY);
-	  
-	  // check if there was a left/right swipe
+	  	// check if there was a left/right swipe
 		if(content.delta && (content.delta[0] || content.delta[0] === 0)) {
 	    var s = Math.sign(dx - content.delta[0]);
 			

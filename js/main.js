@@ -66,8 +66,10 @@
 		new SwipeContent(self.datesContainer);
 		self.datesContainer.addEventListener('swipeLeft', function(event){
 			translateTimeline(self, 'next');
+			translateTimeline(self, 'next');
 		});
 		self.datesContainer.addEventListener('swipeRight', function(event){
+			translateTimeline(self, 'prev');
 			translateTimeline(self, 'prev');
 		});
 
