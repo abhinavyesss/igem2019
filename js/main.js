@@ -11,9 +11,18 @@
 		this.navigation = this.element.getElementsByClassName('cd-h-timeline__navigation');
 		this.contentWrapper = this.element.getElementsByClassName('cd-h-timeline__events')[0];
 		this.content = this.contentWrapper.getElementsByClassName('cd-h-timeline__event');
+
+		txt = "";
+		txt += window.innerWidth;
+		if (txt >= 768) {
+			this.eventsMinDistance = 200; // min distance between two consecutive events (in px)
+			this.eventsMaxDistance = 200; // max distance between two consecutive events (in px)	
+		} else {
+			this.eventsMinDistance = 100; // min distance between two consecutive events (in px)
+			this.eventsMaxDistance = 100; // max distance between two consecutive events (in px)
+		}
+
 		
-		this.eventsMinDistance = 200; // min distance between two consecutive events (in px)
-		this.eventsMaxDistance = 200; // max distance between two consecutive events (in px)
 		this.translate = 0; // this will be used to store the translate value of this.line
 		this.lineLength = 0; //total length of this.line
 		
@@ -42,7 +51,7 @@
 		}
 		
 		// set line/filling line dimensions
-    timeline.line.style.width = (left + timeline.eventsMinDistance)+'px';
+    	timeline.line.style.width = (left + timeline.eventsMinDistance)+'px';
 		timeline.lineLength = left + timeline.eventsMinDistance;
 		// reveal timeline
 		Util.addClass(timeline.element, 'cd-h-timeline--loaded');
@@ -66,10 +75,8 @@
 		new SwipeContent(self.datesContainer);
 		self.datesContainer.addEventListener('swipeLeft', function(event){
 			translateTimeline(self, 'next');
-			translateTimeline(self, 'next');
 		});
 		self.datesContainer.addEventListener('swipeRight', function(event){
-			translateTimeline(self, 'prev');
 			translateTimeline(self, 'prev');
 		});
 

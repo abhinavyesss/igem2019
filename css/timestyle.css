@@ -1923,7 +1923,7 @@ body {
   top: 0;
   left: 0;
   background-color: #f7f7f7;
-  opacity: 0.95;
+  opacity: 0.98;
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -1946,11 +1946,11 @@ body {
 }
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay a {font-size: 12px}
   .overlay .closebtn {
   font-size: 40px;
-  top: 15px;
-  right: 35px;
+  top: 10px;
+  right: 10px;
   }
 }
 @-webkit-keyframes cd-enter-right {
