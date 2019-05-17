@@ -414,14 +414,28 @@
         	$(window).resize(function(){
         		if($(this).width()<=425) {
             		$('.mainhead1').css("font-size","42px");	
-            		$('.mainhead1').css("letter-spacing","5px");	
+            		$('.mainhead1').css("letter-spacing","5px");
+            		$('.cd-h-timeline__event-date ').css("font-size","14px");
+            		$('.cd-h-timeline__event-description').css("font-size","10px");
+            		$('.cd-h-timeline').css("margin-top","50px");
+            		$('.closebtn').css("font-size","30px");
+            		$('.closebtn').css("top","10px");
+            		$('.closebtn').css("right","20px");
             	} else if ($(this).width()<992) {
             		$('.mainhead1').css("font-size","60px");	
             		$('.mainhead1').css("letter-spacing","12px");	
+            		$('.cd-h-timeline__event-content').css("max-width","100%");	
             	}
             	 else {
             		$('.mainhead1').css("font-size","74px");	
             		$('.mainhead1').css("letter-spacing","20px");	
+            		$('.cd-h-timeline__event-content').css("max-width","800px");
+            		$('.cd-h-timeline__event-date ').css("font-size","24px");
+            		$('.cd-h-timeline__event-description').css("font-size","14px");
+            		$('.cd-h-timeline').css("margin-top","100px");
+            		$('.closebtn').css("font-size","60px");
+            		$('.closebtn').css("top","20px");
+            		$('.closebtn').css("right","45px");
             	}
         	});
         });
