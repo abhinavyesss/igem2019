@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/lora.css">
     <link rel="stylesheet" type="text/css" href="css/libre.css">
+	<link rel="stylesheet" type="text/css" href="css/nova.css">
     <title>Team VIT Vellore/Notebook</title>
 </head>
 <body style="height: 100vh;">
@@ -84,14 +85,14 @@
 		    	</ul>
 		  	</div>
 		</nav><br><br>
-		<div style="font-family: 'Libre Baskerville', serif; font-weight: bold; text-align: center; margin-top: 35vh;">
-			<h1 style="font-size: 60px; font-weight: bold;">TIMELINE</h1><br><br>
-			<span style="font-size:20px; cursor:pointer" onclick="openNav()" class="btn1">Show</span>
+		<div style="font-weight: bold; text-align: center; margin-top: 35vh;">
+			<h1 class="mainhead1" style="font-size: 84px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px;">TIMELINE</h1><br><br>
+			<span style="font-size:20px; cursor:pointer; font-family: 'Libre Baskerville', serif;" onclick="openNav()" class="btn1">Show</span>
 		</div>
 	</div>
 
 
-	<div id="myNav" class="overlay">
+	<div id="myNav" class="overlay" style="font-family: 'Libre Baskerville', serif;">
 	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  	<section class="cd-h-timeline js-cd-h-timeline margin-bottom--md" style="font-family: 'Lora', serif; margin-top: 100px;">
 	        <div class="cd-h-timeline__container container">
@@ -406,6 +407,15 @@
             		$('.navh6').css("padding","39px 0 39px 30px");
             		$('.navh7').css("padding","39px 0 39px 30px");
             		$('.navbar').css("background","none");
+            	}
+        	});
+        	$(window).resize(function(){
+        		if($(this).width()<=425) {
+            		$('.mainhead1').css("font-size","42px");	
+            		$('.mainhead1').css("letter-spacing","5px");	
+            	} else {
+            		$('.mainhead1').css("font-size","74px");	
+            		$('.mainhead1').css("letter-spacing","20px");	
             	}
         	});
         });
