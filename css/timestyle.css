@@ -1944,15 +1944,6 @@ body {
   right: 45px;
   font-size: 60px;
 }
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 12px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 10px;
-  right: 10px;
-  }
-}
 @-webkit-keyframes cd-enter-right {
   0% {
     opacity: 0;
