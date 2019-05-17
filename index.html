@@ -415,7 +415,11 @@
         		if($(this).width()<=425) {
             		$('.mainhead1').css("font-size","42px");	
             		$('.mainhead1').css("letter-spacing","5px");	
-            	} else {
+            	} else if ($(this).width()<992) {
+            		$('.mainhead1').css("font-size","60px");	
+            		$('.mainhead1').css("letter-spacing","12px");	
+            	}
+            	 else {
             		$('.mainhead1').css("font-size","74px");	
             		$('.mainhead1').css("letter-spacing","20px");	
             	}
