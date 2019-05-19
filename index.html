@@ -18,8 +18,8 @@
 
 
 
-	<div class="container-fluid" style="margin: 0; padding: 0; height: 100vh; background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('img/img1.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-		<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top: 0; border-bottom: 3px solid black; transition: 0.3s; width: 100%; z-index: 35; padding-bottom: 0px;">
+	<div class="container-fluid" style="margin: 0; padding: 0; height: 100vh; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/img1.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+		<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top: 0; border-bottom: 3px solid black; transition: 0.3s; width: 100%; z-index: 35; padding-bottom: 0px; background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), transparent;">
 		  	<a class="navbar-brand" href="#" style="font-family: 'Slabo 27px', serif; font-weight: bold; font-size: 48px; text-decoration: none;"><img src="img/logo2.png" style="width: 190px; height: 75px; padding: 0 0 10px 0;" /></a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
@@ -88,8 +88,8 @@
 		  	</div>
 		</nav><br><br>
 		<div style="font-weight: bold; text-align: center; margin-top: 35vh;">
-			<h1 class="mainhead1" style="font-size: 84px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px;">TIMELINE</h1><br><br>
-			<span style="font-size:20px; cursor:pointer; font-family: 'Libre Baskerville', serif;" onclick="openNav()" class="btn1">Show</span>
+			<h1 class="mainhead1" style="font-size: 84px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</h1><br><br>
+			<span onclick="openNav()" class="btn7">&#8595;</span>
 		</div>
 	</div>
 
@@ -398,7 +398,7 @@
             		$('.navh5').css("padding","10px 0 10px 0");
             		$('.navh6').css("padding","10px 0 10px 0");
             		$('.navh7').css("padding","10px 0 10px 0");
-            		$('.navbar').css("background","linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8))");	
+            		$('.navbar').css("background","linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.9)), transparent");	
             	}
             	else {
             		$('.navh1').css("padding","39px 0 39px 30px");
@@ -408,7 +408,7 @@
             		$('.navh5').css("padding","39px 0 39px 30px");
             		$('.navh6').css("padding","39px 0 39px 30px");
             		$('.navh7').css("padding","39px 0 39px 30px");
-            		$('.navbar').css("background","none");
+            		$('.navbar').css("background","linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), transparent");
             	}
         	});
         	$(window).resize(function(){
