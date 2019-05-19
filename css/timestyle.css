@@ -1535,31 +1535,6 @@ u {
 .radio-list > *:last-of-type, .checkbox-list > *:last-of-type {
   margin-bottom: 0;
 }
-.btn7 {
-	font-size: 24px;
-	color: white;
-	background: transparent;
-	font-size:28px; 
-	cursor: pointer; 
-	color: white;
-	position: relative;
-	-webkit-animation-name: example; 
-	-webkit-animation-duration: 4s; 
-	-webkit-animation-iteration-count: infinite; 
-	animation-name: example;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-}
-@-webkit-keyframes example {
-	0%   {top:0px;}
-	50%  {top:20px;}
-	100% {top:0px;}
-}
-@keyframes example {
-	0%   {top:0px;}
-	50%  {top:20px;}
-	100% {top:0px;}
-}
 .radio-list label, .checkbox-list label {
   line-height: 1.4;
   line-height: var(--body-line-height);
@@ -1680,24 +1655,20 @@ u {
   --font-secondary: 'Playfair Display', serif;
 }
 body {
-  margin: 0;
-  padding: 0; 		
-  /*color: #383838;
-  color: var(--cd-color-1);
-  background-color: #f7f7f7;
-  background-color: var(--cd-color-3);*/
+  	margin: 0;
+  	padding: 0; 		
 }
 .js .cd-h-timeline {
-  opacity: 0;
-  transition: opacity 0.2s;
+  	opacity: 0;
+  	transition: opacity 0.2s;
 }
 .js .cd-h-timeline--loaded {
-  opacity: 1;
+  	opacity: 1;
 }
 .js .cd-h-timeline__container {
-  position: relative;
-  height: 100px;
-  max-width: 800px;
+  	position: relative;
+  	height: 100px;
+  	max-width: 800px;
 }
 .js .cd-h-timeline__dates {
   position: relative;
@@ -1713,24 +1684,13 @@ body {
   height: 100%;
   width: 20px;
 }
-.js .cd-h-timeline__dates::before {
-  left: 0;
-  background: linear-gradient(to right, #f7f7f7, rgba(247, 247, 247, 0));
-  background: linear-gradient(to right, var(--cd-color-3), rgba(0, 0, 0, 0));
-}
-.js .cd-h-timeline__dates::after {
-  right: 0;
-  background: linear-gradient(to left, #f7f7f7, rgba(247, 247, 247, 0));
-  background: linear-gradient(to left, var(--cd-color-3), rgba(0, 0, 0, 0));
-}
 .js .cd-h-timeline__line {
   position: absolute;
   z-index: 1;
   left: 0;
   top: 49px;
   height: 2px;
-  background-color: #dfdfdf;
-  background-color: #000;
+  background-color: grey;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
@@ -1759,6 +1719,7 @@ body {
   bottom: 0;
   z-index: 2;
   text-align: center;
+  font-weight: bold;
   font-size: 0.8em;
   padding-bottom: 0.75em;
   padding-bottom: var(--space-sm);
@@ -1795,72 +1756,76 @@ body {
   border-color: var(--cd-color-2);
 }
 @media (min-width: 64rem) {
-  .js .cd-h-timeline__date {
-    font-size: 0.7em;
-  }
+	.js .cd-h-timeline__date {
+		font-size: 0.7em;
+	}
 }
 .js .cd-h-timeline__date--selected {
-  pointer-events: none;
+	pointer-events: none;
 }
 .js .cd-h-timeline__date--selected::after {
-  background-color: #7a9d06;
-  background-color: var(--cd-color-2);
-  border-color: #7a9d06;
-  border-color: var(--cd-color-2);
+	background-color: #7a9d06;
+	background-color: var(--cd-color-2);
+	border-color: #7a9d06;
+	border-color: var(--cd-color-2);
 }
 .js .cd-h-timeline__date--older-event::after {
   border-color: #7a9d06;
   border-color: var(--cd-color-2);
 }
 .js .cd-h-timeline__navigation {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #dfdfdf;
-  transition: border-color 0.3s;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border-width: 2px;
+	border: 2px solid grey;	
+	transition: border-color 0.3s;
+	transition: background-color 0.3s;
 }
 .js .cd-h-timeline__navigation::after {
-  content: '';
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-arrow.svg) no-repeat 0 0;
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(../img/arrow.png);
+	background-size: cover;
+	background-position: center;
 }
 .js .cd-h-timeline__navigation:hover {
-  border-color: #7a9d06;
-  border-color: var(--cd-color-2);
+	background-color: limegreen;
+	border-color: limegreen;
 }
 .js .cd-h-timeline__navigation--prev {
-  left: 0;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  -ms-transform: translateY(-50%) rotate(180deg);
-  transform: translateY(-50%) rotate(180deg);
+	left: 0;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
 }
 .js .cd-h-timeline__navigation--next {
-  right: 0;
+  	right: 0;
 }
 .js .cd-h-timeline__navigation--inactive {
-  cursor: not-allowed;
+  	cursor: not-allowed;
+  	border-color: #dadadb;
+  	background: transparent;
 }
 .js .cd-h-timeline__navigation--inactive::after {
-  background-position: 0 -16px;
+  	background-position: 0 -16px;
 }
 .js .cd-h-timeline__navigation--inactive:hover {
-  border-color: #dfdfdf;
-  border-color: #000;
+ 	border-color: #dfdfdf;
+  	background: transparent;
 }
 .js .cd-h-timeline__events {
 	position: relative;
@@ -1909,7 +1874,6 @@ body {
 .js .cd-h-timeline__event-title {
 	color: #383838;
 	color: var(--cd-color-1);
-	font-family: 'Playfair Display', serif;
 	font-family: var(--font-secondary);
 	font-weight: 700;
 	font-size: 2.48832em;
@@ -1926,6 +1890,37 @@ body {
 	font-size: 14px;	
 	color: black;
 }
+.btn7 {
+	font-size: 24px;
+	color: white;
+	background: transparent;
+	font-size:28px; 
+	cursor: pointer; 
+	color: white;
+	position: relative;
+	-webkit-animation-name: example; 
+	-webkit-animation-duration: 2s; 
+	-webkit-animation-iteration-count: infinite; 
+	animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+	0%   {top:0px;}
+	50%  {top:20px;}
+	100% {top:0px;}
+}
+@keyframes example {
+	0%   {top:0px;}
+	50%  {top:20px;}
+	100% {top:0px;}
+}
+.js .cd-h-timeline__dates::before {
+	left: 0;
+}
+.js .cd-h-timeline__dates::after {
+  	right: 0;
+}
 .overlay {
 	padding: 0;
 	margin: 0;	
@@ -1935,26 +1930,46 @@ body {
 	z-index: 37;
 	top: 0;
 	left: 0;
-	background-color: #f7f7f7;
-	opacity: 0.98;
-	overflow-y: hidden;
+	background-color: rgb(252,228,252);
+	opacity: 1;
+	overflow-y: auto;
 	transition: 0.5s;
+	-webkit-animation-name: examplea; 
+	-webkit-animation-duration: 50s; 
+	-webkit-animation-iteration-count: infinite; 
+	animation-name: examplea;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
 }
-
+@-webkit-keyframes examplea {
+	0%   {background-color: rgb(252,228,252);}
+	20%  {background-color: rgb(248,238,252);}
+	40%  {background-color: rgb(239,238,252);}
+	60%  {background-color: rgb(238,252,246);}
+	80%  {background-color: rgb(252,228,252);}
+	100% {background-color: rgb(252,240,238);}
+}
+@keyframes examplea {
+	0%   {background-color: rgb(252,228,252);}
+	20%  {background-color: rgb(248,238,252);}
+	40%  {background-color: rgb(239,238,252);}
+	60%  {background-color: rgb(238,252,246);}
+	80%  {background-color: rgb(252,228,252);}
+	100% {background-color: rgb(252,240,238);}
+}
 .overlay .closebtn:hover, .overlay .closebtn:focus {
-	color: #f1f1f1;
+	color: gainsboro;
 }
-
 .overlay .closebtn {
-	color: grey;
+	color: rgb(80,137,227);
 	padding: 8px;
 	text-decoration: none;
 	font-size: 36px;
 	display: block;
 	transition: 0.3s;
 	position: absolute;
-	top: 20px;
-	right: 45px;
+	top: 10px;
+	right: 20px;
 	font-size: 60px;
 }
 @-webkit-keyframes cd-enter-right {
