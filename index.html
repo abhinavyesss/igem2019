@@ -88,7 +88,8 @@
 		  	</div>
 		</nav><br><br>
 		<div style="font-weight: bold; text-align: center; margin-top: 35vh;">
-			<h1 class="mainhead1" style="font-size: 100px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</span></h1><br><br>
+			<h6 class="mainhead2" style="font-size: 14px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 2px; color: white;">NOTEBOOK</h6>
+			<h1 class="mainhead1" style="font-size: 100px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</span></h1><br>
 			<span onclick="openNav()" class="btn7">&#8595;</span>
 		</div>
 	</div>
@@ -97,10 +98,10 @@
 	<div id="myNav" class="overlay" style="font-family: 'Libre Baskerville', serif;">
 	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  	<section class="cd-h-timeline js-cd-h-timeline margin-bottom--md" style="font-family: 'Lora', serif; margin-top: 70px;">
-	  		<div class="container" style="max-width: 800px; padding: 0;">
-	  			<h2 style="font-weight: bold;">Timeline</h2>
-	  			<p style="font-size: 13px; padding: 8px 0 18px 0;"> You can find our work schedule for iGEM here</p>
-	  		</div>
+	  		<div class="container" style="max-width: 800px; padding: 8px 10px 8px 10px;">
+	  			<h2 style="font-weight: bold; padding-bottom: 8px;">Timeline</h2>
+	  			<p style="font-size: 13px;"> You can find our work schedule for iGEM here</p>
+	  		</div><br>
 	        <div class="cd-h-timeline__container container">
 	            <div class="cd-h-timeline__dates">
 	                <div class="cd-h-timeline__line">
@@ -440,8 +441,9 @@
         	$(window).resize(function(){
         		if($(this).width()<=425) {
             		$('.mainhead1').css("font-size","42px");	
+            		$('.mainhead2').css("font-size","8px");	
             		$('.mainhead1').css("letter-spacing","5px");
-            		$('.cd-h-timeline__event-date ').css("font-size","14px");
+            		$('.cd-h-timeline__event-date').css("font-size","14px");
             		$('.cd-h-timeline__event-description').css("font-size","10px");
             		$('.cd-h-timeline').css("margin-top","50px");
             		$('.closebtn').css("font-size","40px");
@@ -449,14 +451,16 @@
             		$('.closebtn').css("right","20px");
             	} else if ($(this).width()<992) {
             		$('.mainhead1').css("font-size","60px");	
+            		$('.mainhead2').css("font-size","12px");	
             		$('.mainhead1').css("letter-spacing","12px");	
             		$('.cd-h-timeline__event-content').css("max-width","100%");	
             	}
             	 else {
             		$('.mainhead1').css("font-size","100px");	
+            		$('.mainhead2').css("font-size","14px");	
             		$('.mainhead1').css("letter-spacing","20px");	
             		$('.cd-h-timeline__event-content').css("max-width","800px");
-            		$('.cd-h-timeline__event-date ').css("font-size","24px");
+            		$('.cd-h-timeline__event-date').css("font-size","20px");
             		$('.cd-h-timeline__event-description').css("font-size","14px");
             		$('.cd-h-timeline').css("margin-top","100px");
             		$('.closebtn').css("font-size","60px");
