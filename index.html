@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/lora.css">
     <link rel="stylesheet" type="text/css" href="css/libre.css">
 	<link rel="stylesheet" type="text/css" href="css/nova.css">
+	<link rel="stylesheet" type="text/css" href="css/garamond.css">
     <title>Team VIT Vellore/Timeline</title>
 </head>
 <body style="height: 100vh;">
@@ -20,7 +21,7 @@
 
 	<div class="container-fluid" style="margin: 0; padding: 0; height: 100vh; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/img1.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 		<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top: 0; border-bottom: 3px solid black; transition: 0.3s; width: 100%; z-index: 35; padding-bottom: 0px; background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), transparent;">
-		  	<a class="navbar-brand" href="#" style="font-family: 'Slabo 27px', serif; font-weight: bold; font-size: 48px; text-decoration: none;"><img src="img/logo2.png" style="width: 190px; height: 75px; padding: 0 0 10px 0;" /></a>
+		  	<a class="navbar-brand" href="" style="font-family: 'Slabo 27px', serif; font-weight: bold; font-size: 48px; text-decoration: none;"><img src="img/logo2.png" style="width: 190px; height: 75px; padding: 0 0 10px 0;" /></a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		    	<span class="navbar-toggler-icon"></span>
 		  	</button>
@@ -87,9 +88,9 @@
 		    	</ul>
 		  	</div>
 		</nav><br><br>
-		<div style="font-weight: bold; text-align: center; margin-top: 35vh;">
-			<h6 class="mainhead2" style="font-size: 14px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 2px; color: white;">NOTEBOOK</h6>
-			<h1 class="mainhead1" style="font-size: 100px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</span></h1><br>
+		<div style="text-align: center; margin-top: 37vh;">
+			<h1 class="mainhead1" style="font-size: 100px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</span></h1>
+			<p class="mainpara1" style="font-size: 16px; color: white; font-family: 'EB Garamond', serif; padding: 3px 0 20px 0; letter-spacing: 2px; font-weight: bold; color: #EDEDED;"> Our work schedule for iGEM</p>
 			<span onclick="openNav()" class="btn7">&#8595;</span>
 		</div>
 	</div>
@@ -99,9 +100,9 @@
 	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  	<section class="cd-h-timeline js-cd-h-timeline margin-bottom--md" style="font-family: 'Lora', serif; margin-top: 70px;">
 	  		<div class="container" style="max-width: 800px; padding: 8px 10px 8px 10px;">
-	  			<h2 style="font-weight: bold; padding-bottom: 8px;">Timeline</h2>
-	  			<p style="font-size: 13px;"> You can find our work schedule for iGEM here</p>
-	  		</div><br>
+	  			<h2 style="font-weight: bold; padding-bottom: 14px;">Timeline</h2>
+	  			<p style="font-size: 13px;"> Our work schedule for iGEM</p>
+	  		</div>
 	        <div class="cd-h-timeline__container container">
 	            <div class="cd-h-timeline__dates">
 	                <div class="cd-h-timeline__line">
@@ -441,7 +442,8 @@
         	$(window).resize(function(){
         		if($(this).width()<=425) {
             		$('.mainhead1').css("font-size","42px");	
-            		$('.mainhead2').css("font-size","8px");	
+            		$('.mainhead2').css("font-size","11px");	
+            		$('.mainpara1').css("font-size","11px");	
             		$('.mainhead1').css("letter-spacing","5px");
             		$('.cd-h-timeline__event-date').css("font-size","14px");
             		$('.cd-h-timeline__event-description').css("font-size","10px");
@@ -451,13 +453,15 @@
             		$('.closebtn').css("right","20px");
             	} else if ($(this).width()<992) {
             		$('.mainhead1').css("font-size","60px");	
-            		$('.mainhead2').css("font-size","12px");	
+            		$('.mainhead2').css("font-size","13px");	
+            		$('.mainpara1').css("font-size","13px");	
             		$('.mainhead1').css("letter-spacing","12px");	
             		$('.cd-h-timeline__event-content').css("max-width","100%");	
             	}
             	 else {
             		$('.mainhead1').css("font-size","100px");	
-            		$('.mainhead2').css("font-size","14px");	
+            		$('.mainhead2').css("font-size","16px");	
+            		$('.mainpara1').css("font-size","16px");	
             		$('.mainhead1').css("letter-spacing","20px");	
             		$('.cd-h-timeline__event-content').css("max-width","800px");
             		$('.cd-h-timeline__event-date').css("font-size","20px");
