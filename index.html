@@ -8,7 +8,7 @@
     <link rel='shortcut icon' href='img/logo.ico' type='image/x-icon'>
    	<link rel='icon' href='img/logo.ico' type='image/x-icon'>   
     <link rel="stylesheet" type="text/css" href="css/timestyle.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/lora.css">
     <link rel="stylesheet" type="text/css" href="css/libre.css">
 	<link rel="stylesheet" type="text/css" href="css/nova.css">
@@ -19,7 +19,7 @@
 
 
 
-	<div class="container-fluid" style="margin: 0; padding: 0; height: 100vh; background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('img/img1.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+	<div class="container-fluid" style="margin: 0; padding: 0; height: 100vh; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/img1.jpg'); background-position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 		<nav class="navbar navbar-expand-lg navbar-light" style="position: fixed; top: 0; border-bottom: 3px solid black; transition: 0.3s; width: 100%; z-index: 35; padding-bottom: 0px; background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), transparent;">
 		  	<a class="navbar-brand" href="#" style="font-family: 'Slabo 27px', serif; font-weight: bold; font-size: 48px; text-decoration: none;"><img src="img/logo2.png" style="width: 190px; height: 75px; padding: 0 0 10px 0;" /></a>
 		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,10 +85,15 @@
 		    	</ul>
 		  	</div>
 		</nav><br><br>
-		<div style="text-align: center; margin-top: 37vh;">
-			<h1 class="mainhead1" style="font-size: 100px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; color: white;">TIMELINE</span></h1>
-			<p class="mainpara1" style="font-size: 16px; color: white; font-family: 'EB Garamond', serif; padding: 3px 0 20px 0; letter-spacing: 2px; font-weight: bold; color: #EDEDED;"> Our work schedule for iGEM</p>
-			<span onclick="openNav()" class="btn7">&#8595;</span>
+		<div class="row container main1" style="text-align: center; margin-top: 24vh; width: 100%; position: relative;">
+			<div class="col-md-6 main11" style="padding: 0; margin: 0; position: relative; top: -30px; z-index: 1;">
+				<img class="mainimg1" src="img/calender.jpg" style="width: 100%; height: 100%;">
+			</div>
+			<div class="col-md-6 main12" style="background-color: white; padding: 50px 0 50px 0; color: black; margin: 0; background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)); position: relative; left: -40px;">
+				<h1 class="mainhead1" style="font-size: 40px; font-weight: bold; font-family: 'Nova Script', cursive; letter-spacing: 20px; padding: 70px 0 0 0;">TIMELINE</span></h1>
+				<p class="mainpara1" style="font-size: 16px; font-family: 'EB Garamond', serif; padding: 3px 0 20px 0; letter-spacing: 2px; font-weight: bold; color:"> Our work schedule for iGEM</p>
+				<span onclick="openNav()" class="btn7" style="color: black;">&#8595;</span>
+			</div>
 		</div>
 	</div>
 
@@ -337,25 +342,6 @@
 
 
 
-	<script type="text/javascript">
-		$(document).ready(function(){       
-            var scroll_pos = 0;
-            $(document).scroll(function() { 
-                scroll_pos = $(this).scrollTop();
-                if(scroll_pos > 20) {
-                    $(".navbar").css('background','white');
-                    $(".navbar").css('padding-top','0');
-                    $(".navbar").css('padding-bottom','0');
-                } else {
-                    $(".navbar").css('background','transparent');
-                    $(".navbar").css('padding-top','8px');
-                    $(".navbar").css('padding-bottom','8px');
-                }
-            });
-        });
-	</script>
-
-
 
     <script type="text/javascript">
         $(document).ready(function(){
@@ -415,8 +401,7 @@
             		$('.navh3').css("padding","10px 0 10px 0");
             		$('.navh4').css("padding","10px 0 10px 0");
             		$('.navh5').css("padding","10px 0 10px 0");
-            		$('.navh6').css("padding","10px 0 10px 0");
-            		$('.navbar').css("background","linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.9)), transparent");	
+            		$('.navh6').css("padding","10px 0 10px 0");	
             	}
             	else {
             		$('.navh1').css("padding","39px 0 39px 30px");
@@ -425,33 +410,42 @@
             		$('.navh4').css("padding","39px 0 39px 30px");
             		$('.navh5').css("padding","39px 0 39px 30px");
             		$('.navh6').css("padding","39px 0 39px 30px");
-            		$('.navbar').css("background","linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), transparent");
             	}
         	});
         	$(window).resize(function(){
         		if($(this).width()<=425) {
-            		$('.mainhead1').css("font-size","42px");	
+            		$('.mainhead1').css("font-size","24px");	
             		$('.mainhead2').css("font-size","11px");	
             		$('.mainpara1').css("font-size","11px");	
             		$('.mainhead1').css("letter-spacing","5px");
+            		$('.mainhead1').css("padding","0 0 0 0");
             		$('.cd-h-timeline__event-date').css("font-size","14px");
             		$('.cd-h-timeline__event-description').css("font-size","10px");
             		$('.cd-h-timeline').css("margin-top","50px");
             		$('.closebtn').css("font-size","40px");
             		$('.closebtn').css("top","10px");
             		$('.closebtn').css("right","20px");
+            		$('.main1').css("top","-50px");
+            		$('.main11').css("top","0");
+            		$('.main12').css("left","0");
+            		$('.main12').css("top","-30px");
+            		$('.main12').css("height","200px");
             	} else if ($(this).width()<992) {
-            		$('.mainhead1').css("font-size","60px");	
+            		$('.mainhead1').css("font-size","37px");	
             		$('.mainhead2').css("font-size","13px");	
             		$('.mainpara1').css("font-size","13px");	
             		$('.mainhead1').css("letter-spacing","12px");	
+            		$('.mainhead1').css("padding","0 0 0 0");
             		$('.cd-h-timeline__event-content').css("max-width","100%");	
+            		$('.main12').css("left","0");
+            		$('.main11').css("top","0");
             	}
             	 else {
-            		$('.mainhead1').css("font-size","100px");	
+            		$('.mainhead1').css("font-size","40px");	
             		$('.mainhead2').css("font-size","16px");	
             		$('.mainpara1').css("font-size","16px");	
             		$('.mainhead1').css("letter-spacing","20px");	
+            		$('.mainhead1').css("padding","70px 0 0 0");
             		$('.cd-h-timeline__event-content').css("max-width","800px");
             		$('.cd-h-timeline__event-date').css("font-size","20px");
             		$('.cd-h-timeline__event-description').css("font-size","14px");
@@ -459,6 +453,8 @@
             		$('.closebtn').css("font-size","60px");
             		$('.closebtn').css("top","20px");
             		$('.closebtn').css("right","45px");
+            		$('.main12').css("left","-40px");
+            		$('.main11').css("top","-30px");
             	}
         	});
         });
