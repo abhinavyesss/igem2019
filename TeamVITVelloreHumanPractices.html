@@ -1,0 +1,928 @@
+{{VIT_Vellore}}
+{{VIT_Vellore/CSS}}
+{{VIT_Vellore/JS}}
+{{VIT_Vellore/JSold}}
+{{VIT_Vellore/Popper}}
+{{VIT_Vellore/JS2}}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='shortcut icon' href='https://2019.igem.org/wiki/images/9/9d/T--VIT_Vellore--Projectlogo.png' type='image/x-icon'>
+
+
+
+
+
+<link rel='icon' href='https://2019.igem.org/wiki/images/9/9d/T--VIT_Vellore--Projectlogo.png' type='image/x-icon'>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap" rel="stylesheet">
+
+
+
+
+<title>Team VIT Vellore/Description</title>
+<style>
+::selection{background-color: maroon; color: white;}
+#bodyContent { background: transparent;}
+#content { background: transparent;}
+#globalWrapper {
+padding-bottom: 0px;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 100;
+top: 0;
+left: 0;
+background-color: #2b2b2b;
+overflow-x: hidden;
+transition: 0.5s;
+box-shadow: 8px 0 10px -6px black;
+}
+a:hover {text-decoration: none;}
+.sidenav a {
+padding: 2px 8px 2px 22px;
+text-decoration: none;
+font-size: 25px;
+color: white;
+display: block;
+transition: 0.3s;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.dropdown-menu {
+border-radius: 0;
+}
+li.dropdown .dropdown-menu {
+padding: 0;
+margin: 0;
+}
+li.dropdown .dropdown-menu .dropdown-item {
+color: #566573;
+font-size: 11px;
+font-weight: bold;
+padding-top: 15px;
+padding-bottom: 15px;
+transition: 0.25s;
+text-decoration: none;
+}
+li.dropdown .dropdown-menu .dropdown-item:hover {
+color: rgb(3,251,32);
+padding-left: 28px;
+}
+.nav1_sidebar .dropdown-item, .nav2_sidebar .dropdown-item, .nav3_sidebar .dropdown-item, .nav4_sidebar .dropdown-item, .nav5_sidebar .dropdown-item, .nav6_sidebar .dropdown-item {
+color: white;
+padding-top: 0;
+padding-bottom: 0;
+transition: 0.25s;
+margin-left: 3px;
+text-decoration: none;
+background: transparent;
+}
+.nav1_sidebar .dropdown-item:hover,  .nav2_sidebar .dropdown-item:hover,  .nav3_sidebar .dropdown-item:hover,  .nav4_sidebar .dropdown-item:hover, .nav5_sidebar .dropdown-item:hover, .nav6_sidebar .dropdown-item:hover {
+color: rgb(3,251,32);
+margin-left: 28px;
+background: transparent;
+}
+.mainbtn {
+display: none;
+background: transparent;
+border: none;
+font-size: 28px;
+cursor: pointer;
+-webkit-tap-highlight-color: transparent;
+color: black;
+}
+.mainbtn1 {
+font-size: 14px;
+font-weight: bold;
+border-radius: 0;
+border: 2px solid silver;
+transition: 0.25s;
+background: transparent;
+margin-top: 20px;
+margin-bottom: 20px;
+color: silver;
+}
+.mainbtn1:hover {
+border: 2px solid crimson;
+background-color: crimson;
+color: white;
+}
+.main2 {
+margin-left: 70px;
+margin-top: 30px;
+}
+.main3 {
+margin-top: 23vh;
+position: relative;
+}
+.main4 {
+background: rgba(210, 217, 221, 0.95);
+top: 55px;
+margin-left: -50px;
+}
+.main5e a:hover{text-decoration: none;}
+.main5e p{
+font-family: 'Quicksand', sans-serif;
+font-size: 15px;
+}
+.main5e h2{
+font-family: 'Quicksand', sans-serif;
+}
+.main5e h4{
+font-family: 'Quicksand', sans-serif;
+}
+.main5e button {font-family: 'Quicksand', sans-serif; font-weight: bold; font-size: 25px;}
+.main5f h3 {
+font-weight: bold;
+font-size: 32px;
+font-family: 'Raleway', sans-serif;
+}
+.main5f {font-family: 'Raleway', sans-serif;}
+.main5f p{
+font-size: 17px;
+}
+.overlay {
+width: 100%;
+position: relative;
+top: 90px;
+margin-top: 0px;
+padding-top: 0;
+z-index: 40;
+background-color: #383838;
+transition: 1.5s;
+}
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+.overlay a:focus {
+color: black;
+}
+.fade {
+margin: 0;
+padding: 0;
+transition: 1s;
+-webkit-animation-name: fade;
+-webkit-animation-duration: 5.5s;
+animation-name: fade;
+animation-duration: 5.5s;
+}
+.mainbtn div {
+width: 25px;
+height: 3px;
+background-color: white;
+color: white;
+margin: 6px 0;
+}
+#logo1 {transition: 0.5s;}
+.main5c:nth-child(odd) h2{text-align: right;}
+.main5c:nth-child(odd) .main5d{text-align: right;}
+.main5c{padding: 0; margin: 40px 0 40px 0; background-color: #107896; color: white;}
+.main5c hr{color: white; background-color: white;}
+.main5 img{background: black; border-radius: 0; height: 375px; width: 100%; border: 8px solid white; box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.3); z-index: 70;}
+.main3a {text-align: right; font-family: 'Raleway', sans-serif;}
+.main5a{text-align: center;}
+.main5b{position: relative; width: 100%; height: 84vh; margin: 0; padding: 0; background: linear-gradient(rgba(255,255,255,0.82),rgba(255,255,255,0.82)), url(https://2019.igem.org/wiki/images/a/a7/T--VIT_Vellore--Overview.png); top: 0; background-repeat: repeat; background-position: center; cursor: pointer; transition: 0.5s; background-attachment: fixed;}
+.main5b:hover {background: linear-gradient(rgba(255,255,255,0.82),rgba(255,255,255,0.82)), url(https://2019.igem.org/wiki/images/a/a7/T--VIT_Vellore--Overview.png); background-repeat: repeat; background-position: right; background-attachment: fixed;}
+.main5b:hover #logo1 {color: rgb(0,210,51); text-shadow: white 3px 2px 0;}
+.mainhead1 {font-weight: bold; color: white; font-size: 70px; padding-right: 30px; padding-top: 65px;}
+.mainimg{width:100%; margin: 0; padding: 0; transition: 1s;height: 380px; background-color: black;}
+.mainimg1{width: 120px; height: 90px; padding: 10px 0 10px 0;}
+.mainimg2{display: none;}
+.mainimg4{width: 70px; height: auto; padding: 0 0 10px 0;}
+.mainpara{color: white; font-weight: bold; font-size: 14px; padding-right: 30px;}
+.mainpara1{color: white; font-weight: bold; padding-right: 30px; font-size: 14px;}
+@-webkit-keyframes fade {
+from {opacity: .8}
+to {opacity: 1}
+}
+@keyframes fade {
+from {opacity: .8}
+to {opacity: 1}
+}
+#logo {
+font-family: 'Raleway', sans-serif;
+color: black;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 5vw;
+font-weight: bold;
+letter-spacing: -3px;
+line-height: 1;
+text-shadow: #CCCCCC 3px 2px 0;
+position: relative;
+transition: 0.5s;
+}
+@media screen and (max-height: 991px) {
+.sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 1200px) {
+.mainhead1 {font-size: 62px;}
+}
+@media screen and (max-width: 1024px) {
+.mainimg {height: 320px;}
+}
+@media screen and (max-width: 991px) {
+.mainbtn {display: block;}
+.mainimg3{display: none;}
+.mainimg2{display: block; position: absolute; left: 210px; padding-bottom: 13px;}
+.main3 {margin-top: 100px;}
+.main3a{text-align: left;}
+.mainimg{height: 285px;}
+.main5c{margin: 0;}
+}
+@media screen and (max-width: 992px) {
+.main2 {margin-top: 8px;margin-left: 30px;}
+.mainhead1 {padding-top: 24px; font-size: 58px;}
+.main4 {top: 0;margin-left: 0;}
+.mainbtn1{margin-top: 2px;}
+.item-header {left: 14px;}
+.main5c:nth-child(odd) h2{text-align: left;}
+.main5c:nth-child(odd) .main5d{text-align: left;}
+.overlay{top: 60px;}
+#logo {font-size: 8vw;}
+}
+@media screen and (max-width: 425px) {
+.mainhead1 {font-size: 50px;}
+.main3 {margin-top: 120px;}
+.mainimg{height: 283px;}
+.mainimg2{left: 180px;}
+.mainimg4{width: 70px;}
+.mainpara, .mainpara1 {font-size: 10px;}
+.mainbtn1 {font-size: 10px;}
+}
+@media screen and (max-width: 320px) {
+.mainimg2{left: 103px;}
+.mainimg4{width: 70px;}
+.mainimg1{width: 80px;}
+}
+.focus-in-contract {
+-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+@-webkit-keyframes focus-in-contract {
+0% {
+letter-spacing: 1em;
+-webkit-filter: blur(12px);
+filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes focus-in-contract {
+0% {
+letter-spacing: 1em;
+-webkit-filter: blur(12px);
+filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+filter: blur(0px);
+opacity: 1;
+}
+}
+.bounce-in-left {
+-webkit-animation: bounce-in-left 1.1s 1s both;
+animation: bounce-in-left 1.1s 1s both;
+}
+@-webkit-keyframes bounce-in-left {
+0% {
+-webkit-transform: translateX(-600px);
+transform: translateX(-600px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+opacity: 0;
+}
+38% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+opacity: 1;
+}
+55% {
+-webkit-transform: translateX(-68px);
+transform: translateX(-68px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+72% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+81% {
+-webkit-transform: translateX(-28px);
+transform: translateX(-28px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+90% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+95% {
+-webkit-transform: translateX(-8px);
+transform: translateX(-8px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+100% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+}
+@keyframes bounce-in-left {
+0% {
+-webkit-transform: translateX(-600px);
+transform: translateX(-600px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+opacity: 0;
+}
+38% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+opacity: 1;
+}
+55% {
+-webkit-transform: translateX(-68px);
+transform: translateX(-68px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+72% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+81% {
+-webkit-transform: translateX(-28px);
+transform: translateX(-28px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+90% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+95% {
+-webkit-transform: translateX(-8px);
+transform: translateX(-8px);
+-webkit-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+}
+100% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+}
+}
+
+
+
+.accordion {
+background-color: #2b2b2b;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.active, .accordion:hover {
+background-color: #323232;
+}
+.accordion:after {
+content: '\002B';
+color: #777;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+.active:after {
+content: "\2212";
+}
+.panel {
+padding: 0 18px;
+background-color: #383838;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+text-align: justify;
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<div class="container row" style="width: 100%;">
+<nav class="navbar navbar-expand-lg " style="position: fixed; top: 0; padding-top: 20px; transition: 0.3s; width: 100%; z-index: 70; padding-bottom: 0px; background: #2b2b2b; box-shadow: 0px 5px 10px #888888;">
+
+<a class="navbar-brand" href="https://2019.igem.org/Team:VIT_Vellore" style=" text-decoration: none;"><img src="https://2019.igem.org/wiki/images/d/da/T--VIT_Vellore--Projectlogo1.png" class="mainimg4 img-fluid" /></a>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style=" padding-right: 30px;">
+
+<ul class="navbar-nav" style="font-family: 'Quicksand', sans-serif; margin-top: -20px; position: relative;">
+<li class="nav-item dropdown nav1">
+<a class="nav-link navh1 px-4" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; text-align: center; font-weight: bold;">Project</a>
+<div class="dropdown-menu d1" aria-labelledby="navbarDropdownMenuLink" style="font-size: 13px;">
+<a class="dropdown-item" style="padding-top: 10px;" href="https://2019.igem.org/Team:VIT_Vellore/Description">Description</a>
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/Parts">Parts</a>
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/Design">Design</a>
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/Model">Model</a>
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/Experiments">Experiments</a>
+<a class="dropdown-item pb-2" href="https://2019.igem.org/Team:VIT_Vellore/Results">Results</a>
+</div>
+</li>
+<li class="nav-item dropdown nav2">
+<a class="nav-link navh2 px-4" href="https://2019.igem.org/Team:VIT_Vellore/Safety" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Safety</a>
+</li>
+
+<li class="nav-item dropdown nav4">
+<a class="nav-link navh4 px-4" href="https://2019.igem.org/Team:VIT_Vellore/Notebook" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Notebook</a>
+</li>
+
+<li class="nav-item dropdown nav3">
+<a class="nav-link navh3 px-4" href="https://2019.igem.org/Team:VIT_Vellore/Characterization" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="  color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Characterization</a>
+</li>
+
+<li class="nav-item dropdown nav5">
+<a class="nav-link navh5 px-4" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= " color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Human Practices</a>
+<div class="dropdown-menu d5" aria-labelledby="navbarDropdownMenuLink" style="font-size: 13px;">
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/Human_Practices">Overview</a>
+<a class="dropdown-item" style="padding-top: 10px;" href="https://2019.igem.org/Team:VIT_Vellore/Collaborations">Collaborations</a>
+<a class="dropdown-item" href="https://2019.igem.org/Team:VIT_Vellore/IHP">Integrated Human<br>Practices</a>
+<a class="dropdown-item pb-2" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement<br>and Outreach</a>
+</li>
+
+<li class="nav-item dropdown nav6">
+<a class="nav-link navh6 px-4" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="  color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Team</a>
+<div class="dropdown-menu dropdown-menu-right d6" aria-labelledby="navbarDropdownMenuLink" style="font-size: 13px;">
+<a class="dropdown-item" style="padding-top: 10px;" href="https://2019.igem.org/Team:VIT_Vellore/Members">Members</a>
+<a class="dropdown-item pb-2" href="https://2019.igem.org/Team:VIT_Vellore/Attributions">Attributions</a>
+
+</div>
+</li>
+
+
+<li class="nav-item dropdown nav7">
+<a class="nav-link navh7 px-4" href="https://2019.igem.org/Team:VIT_Vellore/Awards" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="  color: white; padding-bottom: 9px; padding-top: 39px; transition: 0.25s; text-decoration: none; font-size: 15px; letter-spacing: 1.3px; font-weight: bold;">Awards</a>
+</li>
+
+
+
+</ul>
+</div>
+<button class="mainbtn" onclick="opennav()" style="color: black;">
+<div></div>
+<div></div>
+<div></div></button>
+</nav>
+</div>
+
+
+
+
+
+
+<div id="mySidenav" class="sidenav" style="font-family: 'Raleway', sans-serif;">
+<div style="background-color: #2b2b2b;">
+<br>
+<a class="navbar-brand" href="https://2019.igem.org/Team:VIT_Vellore" style="padding-top: 40px; padding-bottom: 20px; background-color: #2b2b2b; margin: 0;
+font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 48px; text-decoration: none;"><img src="https://2019.igem.org/wiki/images/7/7b/T--VIT_Vellore--logo.png" style="background-color: #2b2b2b; width: 190px; height: 75px; padding: 0 0 10px 0;" /></a>
+<br>
+</div>
+<hr style="color: white; background-color: white; padding: 0; margin-top: 0;">
+<a href="javascript:void(0)" class="closebtn" onclick="closenav()" style="font-size: 12px; text-align: center; font-weight: bold; color: white; padding: 0;">CLOSE</a>
+<hr style="color: white; background-color: white; padding: 0;">
+<br>
+<ul class="navbar-nav">
+<li class="nav-item dropdown nav1_sidebar" style="z-index: 5;">
+<a class="nav-link navh1_sidebar" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none; ">Project <span style="font-size: 10px;">&#9660;</span></a>
+<div class="d1_sidebar" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Description">Description</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Parts">Parts</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Design">Design</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Model">Model</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Experiments">Experiments</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Results">Results</a>
+</div>
+</li><br>
+
+
+<li class="nav-item dropdown nav2_sidebar" style="z-index: 5;">
+<a class="nav-link navh2_sidebar" href="https://2019.igem.org/Team:VIT_Vellore/Safety" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Safety</a>
+</li><br>
+
+
+<li class="nav-item dropdown nav3_sidebar" style="z-index: 5;">
+<a class="nav-link navh3_sidebar" href="https://2019.igem.org/Team:VIT_Vellore/Notebook" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Notebook</a>
+</li><br>
+
+
+<li class="nav-item dropdown nav4_sidebar" style="z-index: 5;">
+<a class="nav-link navh4_sidebar" href="https://2019.igem.org/Team:VIT_Vellore/Characterization" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Characterization</a>
+</li><br>
+
+
+<li class="nav-item dropdown nav5_sidebar" style="z-index: 5;">
+<a class="nav-link navh5_sidebar" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Human Practices <span style="font-size: 10px;">&#9660;</span></a>
+<div class="d5_sidebar" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Human_Practices">Overview</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Collaborations">Collaborations</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/IHP">IHP</a>
+<a class="dropdown-item" style="padding-bottom: 10px; font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a>
+</div>
+</li><br>
+
+
+<li class="nav-item dropdown nav6_sidebar" style="z-index: 5;">
+<a class="nav-link navh6_sidebar" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Team <span style="font-size: 10px;">&#9660;</span></a>
+<div class="d6_sidebar" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Members">Members</a>
+<a class="dropdown-item" style="font-size: 13px;" href="https://2019.igem.org/Team:VIT_Vellore/Attributions">Attributions</a>
+</div>
+</li><br>
+
+
+
+<li class="nav-item dropdown nav7_sidebar" style="z-index: 5;">
+<a class="nav-link navh7_sidebar" href="https://2019.igem.org/Team:VIT_Vellore/Awards" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 4px; color: white; padding-bottom: 6px; transition: 0.25s; text-decoration: none;">Awards</a>
+</li><br>
+
+
+
+
+
+<br>
+</ul>
+</div>
+
+
+
+<div id="myNav" class="overlay">
+<div class="container-fluid main5b" onclick="smoothScroll(document.getElementById('para1'))">
+<div class="main5a focus-in-contract" style="padding-top: 40vh; z-index: 30;">
+<a id="logo" style="letter-spacing: 4px;">OVER<span id="logo1">VIEW</span></a>
+</div>
+</div>
+
+
+
+<div class="container-fluid main5e" style="margin:0; padding: 0; background: #383838; color: white;">
+
+
+
+<div id="para1" class="container-fluid" style="padding: 70px 0 70px 0; text-align: center; background: #2b2b2b;">
+<h2 class="display-4" style="font-weight: bold; padding: 70px 0 70px 0; font-size: 24px;"><span style="color: rgb(0,210,51);">Ideation</span> and <span style="color: rgb(0,210,51);">Development</span> of HP</h2>
+</div>
+
+
+
+<div class="container p-3" style="width: 92%;"><br><br>
+<button class="accordion">Integration</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Integration <span style="color: rgb(3,251,32);">Human Practices</span></h4><br>
+<p>Integrated human practice primarily involves the incorporation of the knowledge obtained from external sources into obtaining a meaningful solution to the given problem. Its aim is to provide a platform to students to have a profound impact on a social and environmental context. Our aim was to be able to talk to different stakeholders involved in our project. That included interacting with scientists and doctors in the field of AMR and Phage therapy research. We were also able to contact patients that have undergone phage therapy and providers of therapy. These intellectual conversations we had enabled us to comprehend how various aspects of research and therapy works. This has provided us with resourceful insights which we have considered to help us improve and design our project accordingly.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/IHP">Integrated Human Practices</a> page.</p>
+<br>
+</div>
+<button class="accordion">It takes <span style="color: rgb(3,251,32);">two flints</span> to make a fire</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Collaborations</h4><br>
+<p>We started our project with an idea. All ideas, however good, need continuous improvisation. Who better to discuss an idea which is in the crib than peers, who are a part of the same process as we are?</p>
+<p>The collaborations did just that. We got a lot of help from these teams, Team Oxford helped us with the mathematical modelling, team ETH Zurich helped us with valuable information about viral particle numbers. Team Moscow, Team IISER Bhopal, Team SASTRA, Team IISER Kolkata, Team Hamburg, Team TJUSLS_China were all a part of the journey of our project  and have a hand in helping the project reach the heights it is at today.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Collaborations">Collaborations</a> page.</p>
+<br>
+</div>
+<button class="accordion"><span style="color: rgb(3,251,32);">Research</span> meets awareness?</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Symposium</h4><br>
+<p>As our project progressed, we realized that the epidemic of antimicrobial resistance had multiple facets to it, not just in terms of the science behind it but also in terms of the way society looked at this issue.We found out that people from different horizons had varying and at times contrasting opinions about this issue. We wanted to house all these perspectives in a single room and the Symposium named 'Phaging Out Antibiotics' did just that.</p>
+<p>We thought that conducting a symposium with people from different field working on The symposium had representation of Doctors from Christian Medical College, founders of Vitalis, who want to promote phage therapy in India. Symposium also saw representation from a non-profit organisation called 'Superhero against Superbugs' who aim at spreading awareness about the mentioned epidemic and since this symposium was open for students and teachers, we also had an active participation of people in general. It turned out to be a highly informative session not just for the people attending it but also for the major players in terms of understanding the other side's perspective about this issue.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Can a computer application tackle <span style="color: rgb(3,251,32);">AMR</span>?</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Web Application with Antimicrobial Stewardship</h4><br>
+<p>We have all heard of the misuse of antibiotics but unaware of what all measures have been put in place by the government or regulatory bodies to prevent the spread of antibiotic resistance through misuse. While this thought was in the back-burner, on meeting Dr Abdul Ghafur, we learnt about the term ‘Antibiotic stewardship’ a set of guidelines which hospitals and pharmacies should follow to control the dissemination of antibiotics to patients. Implementation of stewardship is a daunting task to take on at a large scale as such we felt that by creating a simple tool we can promote antibiotic stewardship guidelines starting at the pharmacies level. Brainstorming of what could be incorporated in the tool, we decided to include the recording of antibiotic prescriptions, symptoms logger and possible pathogens registry, parameters which can result in more accurate and effective prescriptions and at the same time controlling the negligent use and sale of antibiotics.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Back to our Indian ROOTS-A <span style="color: rgb(3,251,32);">possible solution</span>?</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Traditional Indian medicine</h4><br>
+<p>We pondered over how treatments based on plants of medicinal value in India ,even after its extensive use over centuries together ,still tends to be as effective as they always were! This made us think if it was possible that their respective bacterial targets are incapable of developing resistance to these active compounds and this was the sole purpose of our interest towards understanding the intricacies and mechanism behind this form of medication.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Can <span style="color: rgb(3,251,32);">Sunday morning funnies</span> be used to bring about a change?</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Comics</h4><br>
+<p>When we thought of tackling this problem of AMR, we were thinking of how can we reach out to the people in an accessible way, especially people who don't have the best access to education, medical information, or facilities. We got in touch with SaS after getting to know about them from React. They had the methodology, with their 7 step approach, nailed down to a T. They made children write comics to Foster awareness of AMR, and we decided to help expand the reach by translating it into the many languages that are spoken in the southern part of India.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">How <span style="color: rgb(3,251,32);">general</span> is general <span color="rgb(3,251,32);">knowledge</span>?</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Survey</h4><br>
+<p>While finalizing the problem statement that we were going to tackle we were able to gather a lot of data on global statistics regarding antibiotic resistance. However, we wanted to know more about our local situation as such, we took it upon ourselves to find out the awareness levels of individuals on antibiotic resistance. Although, antibiotic resistance is a global problem, we suspected that even individuals who have access to a wide variety of informational resources to not be aware of its significance. We designed a survey drawing inspiration from WHO’s public awareness survey on antibiotic resistance to gather data. In our discussions we were considering who should be part of the sample population and decided on our respondents being people involved in scientific background like biotech students, and people involved in the healthcare sector like doctors, pharmacists and related fields.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Here we <span style="color: rgb(3,251,32);">start</span> the spark</button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Workshops for middle schoolers</h4><br>
+<p>While brainstorming we realized that the middle schoolers would have limited knowledge about synthetic biology so we thought about initiating with a detailed talk about the recent discoveries in biotechnology, genetic engineering, followed by a spot the animal game to make it interesting. While thinking about the experiments we sought simple experiments such as observation of cells under the microscope, preparation of slide, etc. We added excitement to the workshop by incorporating isolation of DNA from fruits and vegetables. We told the students to get any of their favorite fruit or vegetables and we would extract DNA from it. We also decided to introduce the students to microscopic world by showing them slides of onion peels and leaves. From the kits received from EduBioSkills we thought of engaging the students in an interactive detective game to show how diseases can spread from one person to another.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Fanning the <span style="color: rgb(3,251,32);">flame</span></button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Workshops for high schoolers</h4><br>
+<p>Since the high school know the basics of synthetic biology, we decided to go a little deeper into the topic and introduce concepts of microbiology and molecular biology. The media we received in the mail from EduBioSkills had spilled and gotten contaminated. Hence, we had to come with an alternative solution to demonstrate the experiment.  We experimented with a mixture of rice and daal and various fresh and store-bought juices and got the best results with the fruit juices. Instead of using one strain of bacteria we decided to isolate bacteria from soil by serial dilution, obtained from their school. Further we introduced them to newer concepts where we decided to teach them the codon chart and then tested their understanding by engaging them in a game of finding the codons in given sequences. We also taught them Gram staining and slide preparation to further increase their microbiology skills.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+<button class="accordion">Spreading our message one <span style="color: rgb(3,251,32);">prescription at a time</span></button>
+<div class="panel"><br>
+<h4 style="font-weight: bold;">Paper bags with dosage chart and comic strip</h4><br>
+<p>During the environmental initiative held at the Ambassador school Dubai, the primary school students were involved in making paper bags from waste paper. While they were making paper bags, we got an idea to use those paper bags in a meaningful way. We thought of sticking dosage charts and writing a small message about proper antibiotic usage on them, and provide them to local pharmacies. This step was taken by our team because we found that a lot of people including some pharmacists were unaware of antibiotic resistance and proper dosage methods and hence were providing misleading information to the public. We wanted to reach the local public who are unaware of the serious consequences of antibiotic resistance and wrong dosages. Along with the dosage chart, we used the comics provided by Superheroes Against Superbugs which were translated into Tamil and stuck on the bags. These were then provided to the local pharmacies. We chose comics as medium of communication as illustrations are more easily understood by people and by translated into Tamil, it helped us in reaching a larger crowd.</p>
+<p>To read more visit our <a style="color: rgb(3,251,32);" href="https://2019.igem.org/Team:VIT_Vellore/Public_Engagement">Public Engagement</a> page.</p>
+<br>
+</div>
+
+
+</div><br>
+
+
+
+</div>
+
+
+<div class="container-fluid" style="background:#2b2b2b; color:white;margin-top: 60px; font-family: 'Quicksand', sans-serif;">
+<br>
+<p class="p-3" style="text-align: center; font-size: 18px; font-weight: bold;">Sponsored by</p>
+<div class="container">
+<div class="row">
+<div class="col-md-3 text-center p-2"><img style="width: 50%; height: auto; margin-bottom: 20px;" src="https://2019.igem.org/wiki/images/1/11/T--VIT_Vellore--edubiowhite.png" /></div>
+<div class="col-md-3 text-center p-2"><img style="width: 50%; height: auto; margin-bottom: 20px;" src="https://2019.igem.org/wiki/images/b/b3/T--VIT_Vellore--vitlogowhite.png" /></div>
+<div class="col-md-3 text-center p-2"><img style="width: 50%; height: auto; margin-bottom: 20px;" src="https://2019.igem.org/wiki/images/e/e3/T--VIT_Vellore--twistLogo.png" /></div>
+<div class="col-md-3 text-center p-2"><img style="width: 50%; height: auto; margin-bottom: 20px;" src="https://2019.igem.org/wiki/images/a/a8/T--VIT_Vellore--idtlogo.png" /></div>
+</div>
+</div>
+<br>
+<p style="text-align: center; font-size: 18px; font-weight: bold;">Made by</p>
+<div class="row justify-content-center" style="text-align: center;">
+<div class="col col-md-3 col-12">
+<img src="https://2019.igem.org/wiki/images/7/7b/T--VIT_Vellore--logo.png" style="max-width: 50%; height: auto; margin-top: 16px;" />
+</div>
+</div><br>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.maxHeight) {
+panel.style.maxHeight = null;
+} else {
+panel.style.maxHeight = panel.scrollHeight + "px";
+}
+});
+}
+
+
+
+function opennav() {
+document.getElementById("mySidenav").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closenav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+document.body.style.backgroundColor = "white";
+}
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 5000);
+}
+</script>
+<script type="text/javascript">
+window.smoothScroll = function(target) {
+var scrollContainer = target;
+do {
+scrollContainer = scrollContainer.parentNode;
+if (!scrollContainer) return;
+scrollContainer.scrollTop += 1;
+} while (scrollContainer.scrollTop == 0);
+var targetY = 0;
+do {
+if (target == scrollContainer) break;
+targetY += target.offsetTop;
+}
+while (target = target.offsetParent);
+
+scroll = function(c, a, b, i) {
+i++; if (i > 30) return;
+c.scrollTop = a + (b - a) / 30 * i;
+setTimeout(function(){ scroll(c, a, b, i); }, 30);
+}
+scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+$(document).ready(function(){
+$('.d1').hide();$('.d2').hide();$('.d3').hide();$('.d4').hide();$('.d5').hide();$('.d6').hide();
+$('.nav1').mouseover(function(){
+$('.d1').show();
+$('.navh1').css("color","#1AB821");
+});
+$('.nav1').mouseleave(function(){
+$('.d1').hide();
+$('.navh1').css("color","white");
+});
+$('.nav2').mouseover(function(){
+$('.d2').show();
+$('.navh2').css("color","#1AB821");
+});
+$('.nav2').mouseleave(function(){
+$('.d2').hide();
+$('.navh2').css("color","white");
+});
+$('.nav3').mouseover(function(){
+$('.d3').show();
+$('.navh3').css("color","#1AB821");
+});
+$('.nav3').mouseleave(function(){
+$('.d3').hide();
+$('.navh3').css("color","white");
+});
+$('.nav4').mouseover(function(){
+$('.d4').show();
+$('.navh4').css("color","#1AB821");
+});
+$('.nav4').mouseleave(function(){
+$('.d4').hide();
+$('.navh4').css("color","white");
+});
+$('.nav5').mouseover(function(){
+$('.d5').show();
+$('.navh5').css("color","#1AB821");
+});
+$('.nav5').mouseleave(function(){
+$('.d5').hide();
+$('.navh5').css("color","white");
+});
+$('.nav7').mouseover(function(){
+$('.d7').show();
+$('.navh7').css("color","#1AB821");
+});
+$('.nav7').mouseleave(function(){
+$('.d7').hide();
+$('.navh7').css("color","white");
+});
+$('.nav6').mouseover(function(){
+$('.d6').show();
+$('.navh6').css("color","#1AB821");
+});
+$('.nav6').mouseleave(function(){
+$('.d6').hide();
+$('.navh6').css("color","white");
+});
+$('.d1_sidebar').hide();$('.d2_sidebar').hide();$('.d3_sidebar').hide();$('.d4_sidebar').hide();$('.d5_sidebar').hide();$('.d6_sidebar').hide();
+$('.nav1_sidebar').mouseover(function(){
+$('.d1_sidebar').show();
+$('.navh1_sidebar').css("color","#eeeeee");
+});
+$('.nav2_sidebar').mouseover(function(){
+$('.d2_sidebar').show();
+$('.navh2_sidebar').css("color","#eeeeee");
+});
+$('.nav3_sidebar').mouseover(function(){
+$('.d3_sidebar').show();
+$('.navh3_sidebar').css("color","#eeeeee");
+});
+$('.nav4_sidebar').mouseover(function(){
+$('.d4_sidebar').show();
+$('.navh4_sidebar').css("color","#eeeeee");
+});
+$('.nav5_sidebar').mouseover(function(){
+$('.d5_sidebar').show();
+$('.navh5_sidebar').css("color","#eeeeee");
+});
+$('.nav7_sidebar').mouseover(function(){
+$('.d7_sidebar').show();
+$('.navh7_sidebar').css("color","#eeeeee");
+});
+$('.nav6_sidebar').mouseover(function(){
+$('.d6_sidebar').show();
+$('.navh6_sidebar').css("color","#eeeeee");
+});
+$('.nav1_sidebar').mouseleave(function(){
+$('.d1_sidebar').hide();
+$('.navh1_sidebar').css("color","white");
+});
+$('.nav2_sidebar').mouseleave(function(){
+$('.d2_sidebar').hide();
+$('.navh2_sidebar').css("color","white");
+});
+$('.nav3_sidebar').mouseleave(function(){
+$('.d3_sidebar').hide();
+$('.navh3_sidebar').css("color","white");
+});
+$('.nav4_sidebar').mouseleave(function(){
+$('.d4_sidebar').hide();
+$('.navh4_sidebar').css("color","white");
+});
+$('.nav5_sidebar').mouseleave(function(){
+$('.d5_sidebar').hide();
+$('.navh5_sidebar').css("color","white");
+});
+$('.nav7_sidebar').mouseleave(function(){
+$('.d7_sidebar').hide();
+$('.navh7_sidebar').css("color","white");
+});
+$('.nav6_sidebar').mouseleave(function(){
+$('.d6_sidebar').hide();
+$('.navh6_sidebar').css("color","white");
+});
+});
+</script>
+</body>
+</html>
